@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap');
+
+* {
+    /* margin: 0 y padding: 0 = para quitar los espacios automaticos entre los elementos*/
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body {
+    background-image: url(./img/letras2.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    opacity: 0.9;
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+#title {
+    text-align: center;
+    background-color: #F2F2F2;
+    font-size: 300%;
+}
+
+
+.logoStyle {    
+    background-color: #F2F2F2;
+    padding: 10px;
+    position: relative;
+    padding: 0 10px;
+    margin: 5px;
+    line-height: 50px;
+
+}
+
+/* NAV-BAR */
+
+.navBar {
+    text-align: center;
+    display: flex;
+    /*para que el contenido se alinie*/
+    justify-content: space-between;
+    height: 35px;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #e08474;
+    display: inline-block;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    color: black;
+    text-align:center;
+    padding: 30px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+
+  }
+
+  li a:hover {
+    background-color:#d54e3e;
+    border-radius: 10px;
+    padding: 30px 30px;
+  }
+
+  .active {
+    background-color: #d54e3e;;
+    /* background-color: #BEA4B1; */   
+    border-radius: 8px;
+  }
+
+  main, section {
+    background-color: #F2F2F2;
+} 
+
+.imgHome {
+    /* width: 100px; */
+    /* height: 100px; */
+    padding: 50px;
+    background-color: #e08474;
+    box-shadow: 10px 10px;
+
+}
+
+
+
+  
