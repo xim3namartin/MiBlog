@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <link rel="stylesheet" href="styleContacto.css">
+
+</head>
+<body>
+    <header> 
+        <h1>Sopa de letras</h1>
+        <img src="./img/logo7.png" alt="" style="width:90px;height:80px;border-radius: 20%;"> 
+
+   </header>
+
+    <!-- NAV: va la barra de navegacion, las secciones -->
+   <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="libros.html">Libros</a></li>
+            <li><a href="sobremi.html">Sobre mi</a></li>
+            <li><a href="contacto.html">contacto</a></li>
+        </ul>
+   </nav>
+
+   <main >
+    <div class="fondo-contacto">
+    <section id="formulario" class="fondo-form">
+        <div class="tituloSub-form">
+    
+            <h2 id="titulo-form"> Formulario de contacto</h2>
+            <h3 id="subtitle-form">Contame tus inquietudes <br>o si te gustaria compartir alguna reseña de libros</h3>
+        </div>
+        <div class="recuadro-form">
+        
+            <form action="datacolecta.html">
+        
+    
+            <input type="text" placeholder="Tu nombre completo">
+         
+            <br><br>
+            <div>
+            <select name="inputOption" id="">
+                <option value>Selecciona una opcion</option>
+                <option value="Consultas">Consultas</option>
+                <option value="Reseña de libros">Reseña de libros</option>
+                <option value="Reclamo">Reclamos</option>   
+                <option value="Otros">Otros</option>
+            </select>
+
+            </div>
+            <div class="contact-form">
+                <h4> ¿Cómo queres que te contacte?</h4>
+                <input type="radio" name="contacto" id="">E-mail
+                <input type="radio" name="contacto" id="">Telefono
+                <br><br>
+                <input type="text" placeholder="Contacto">
+
+            </div>
+
+            <br><br>
+
+            <div class="form-text">
+                <input type="text" placeholder="Escribir aqui..." maxlength="100" style="height: 150px">
+
+            </div>
+
+            <br><br>
+            <input type="reset" value="Borrar">
+            <input type="submit" value="Enviar">
+
+        </div>
+
+
+    </form>
+</section>
+</div>
+   </main>
+
+
+    
+</body>
+</html>

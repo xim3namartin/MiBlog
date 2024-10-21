@@ -1,0 +1,65 @@
+/* SECCION: CONTACTO */
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap');
+
+body{
+     font-family: "LXGW WenKai Mono TC", monospace;
+}
+.fondo-contacto {
+    background-image: url(./img/letras2.png);
+    background-color:#c4c6c17b;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    opacity: 0.9;
+
+
+}
+
+
+#titulo-form {
+    font-weight: bold;
+    color: black;
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-size:xx-large;
+}
+
+#subtitle-form {
+    font-family: "LXGW WenKai Mono TC", monospace;
+    color: black;
+}
+
+.recuadro-form, .tituloSub-form {
+    /* background-color: #c4c6c17b; */
+    padding: 10px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+
+
+}
+
+.tituloSub-form {
+    text-align: justify;
+}
+
+.fondo-form {
+    /* background-image: url(./img/letras2.png); */
+
+    /* background-repeat: no-repeat; */
+  /* background-position: left bottom;  */
+    border-radius: 10px;
+    /* opacity: 0.9; */
+    /* background-size:cover; */
+    padding: 30px;
+    align-content: center;
+    background-color: #F2F2F2;
+    opacity: 0.9;
+
+    
+  }
+
+  #formulario {
+    width: 40%;
+    margin: 50px auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }

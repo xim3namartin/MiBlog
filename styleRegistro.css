@@ -1,0 +1,42 @@
+/* Seccion: REGISTRO */
+
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap');
+
+body{
+    /* font-family: "LXGW WenKai TC", cursive; */
+    font-family: "LXGW WenKai Mono TC", monospace;
+}
+
+.fondo-reg {
+    background-image: url(./img/letras2.png);
+    background-color:#c4c6c17b;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    opacity: 0.9;
+
+}
+
+.conteiner-registro {
+    /* background-image: url(./img/letras2.png); */
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    opacity: 0.9;
+    height: 50%;
+    width: 50%;
+    margin: 50px auto;
+    align-content: center;
+}
+
+.registro-form {
+    padding: 30px;
+    background-color: #F2F2F2;
+    height: 50%;
+    width: 50%;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0.9;
+}
