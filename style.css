@@ -18,22 +18,22 @@ body {
     font-family: "LXGW WenKai Mono TC", monospace;
     font-weight: 400;
     font-style: normal;
+    background-color: #F5E1CE;
 }
 
 
 #title {
     text-align: center;
-    background-color: #F2F2F2;
+    /* background-color: #F2F2F2; */
+    background-color: #F5E1CE;
     font-size: 300%;
 }
 
 
 .logoStyle {    
-    background-color: #F2F2F2;
-    padding: 10px;
+    /* background-color: #F2F2F2; */
+    background-color: #F5E1CE;
     position: relative;
-    padding: 0 10px;
-    margin: 5px;
     line-height: 50px;
 
 }
@@ -50,12 +50,14 @@ body {
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
 ul {
     list-style-type: none;
     overflow: hidden;
-    background-color: #e08474;
+    /* background-color: #e08474; */
+    background-color: #CD6A4F;
     display: inline-block;
 
 }
@@ -68,7 +70,7 @@ li {
 li a {
     text-decoration: none;
     border-radius: 16px;
-    background-color: #e08474;
+    background-color: #CD6A4F;
     /* border: none; */
     color: #000000;
     padding: 18px 32px;
@@ -91,7 +93,7 @@ li a {
 
   .active {
     background-color: #d54e3e;
-    /* background-color: #BEA4B1; */   
+    /* background-color: #EEB987; */
     border-radius: 8px;
   }
 
@@ -117,16 +119,17 @@ li a {
 
 
   main, section {
-    background-color: #F2F2F2;
+    /* background-color: #F2F2F2; */
+    background-color: #F5E1CE;
 } 
 
 .imgHome {
     /* width: 100px; */
     /* height: 100px; */
     padding: 50px;
-    background-color: #e08474;
+    background-color: #CD6A4F;
     box-shadow: 10px 10px;
-    width: 850px;
+    width: 85 0px;
     margin-left: auto;
     margin-right: auto;
 }
