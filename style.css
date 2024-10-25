@@ -5,6 +5,8 @@
     /* margin: 0 y padding: 0 = para quitar los espacios automaticos entre los elementos*/
     margin: 0;
     padding: 0;
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-size: 20px;
 
 }
 
@@ -14,114 +16,102 @@ body {
     background-size:contain;
     background-repeat: no-repeat;
     background-position: right;
-    opacity: 0.9;
-    font-family: "LXGW WenKai Mono TC", monospace;
-    font-weight: 400;
-    font-style: normal;
-    background-color: #F5E1CE;
+    /* opacity: 0.9; */
+    /* font-weight: 400;
+    font-style: normal; */
+    /* background-color: #F5E1CE; */
+    
 }
 
-
-#title {
-    text-align: center;
-    /* background-color: #F2F2F2; */
-    background-color: #F5E1CE;
-    font-size: 300%;
-}
-
-
-.logoStyle {    
-    /* background-color: #F2F2F2; */
-    background-color: #F5E1CE;
-    position: relative;
-    line-height: 50px;
-
-}
 
 /* NAV-BAR */
-
-.navBar {
-    text-align: center;
-    display: flex;
-    /*para que el contenido se alinie*/
-    justify-content: space-between;
-    height: 35px;
-    max-width: 992px;
-    margin: 0 auto;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
+.header {
+  /* background-color:  #CD6A4F; */
+  background-color: #CD6A4F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75x;
+  padding: 5px 10%;
 }
 
-ul {
-    list-style-type: none;
-    overflow: hidden;
-    /* background-color: #e08474; */
-    background-color: #CD6A4F;
-    display: inline-block;
 
+.header .logo {
+  cursor: pointer;
 }
 
-li {
-    float: left;
+.header .logo img{
+  height: 70px;
+  width: auto;
+  border-radius: 20px;
+  transition: all 0.3s;
 
 }
 
-li a {
-    text-decoration: none;
-    border-radius: 16px;
-    background-color: #CD6A4F;
-    /* border: none; */
-    color: #000000;
-    padding: 18px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-
-  }
-
-  li a:hover {
-    background-color:#d54e3e;
-    color: #f8f8f8;
-    border-radius: 10px;
-    padding: 30px 30px;
-
-  }
-
-  .active {
-    background-color: #d54e3e;
-    /* background-color: #EEB987; */
-    border-radius: 8px;
-  }
-
-  /* .btnregistro { 
-    background-color: #e08474;
-    border: none;
-    color: #1c2826;
-    padding: 18px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
-  .btnregistro:hover{
-    background-color:#1c2826; 
-    color: white; 
-    border: 2px solid #e08474;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  }*/
+.header .logo img:hover {
+  transform: scale(1.2);
+}
 
 
-  main, section {
-    /* background-color: #F2F2F2; */
-    background-color: #F5E1CE;
-} 
+.header .nav-links {
+  list-style: none;
+
+}
+
+.header .nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+  
+}
+
+.header .nav-links li:hover {
+  transform: scale(1.1);
+}
+
+
+.header .nav-links a {
+  font-size: 700;
+  color: black;
+  text-decoration: none;
+}
+
+
+.header .nav-links li a:hover {
+  color:#F5E1CE;
+  font-weight: bolder;
+}
+
+
+/* estilos la boton de registro */
+
+.header .btn button {
+  font-weight: 700;
+  color: #F5E1CE;
+  padding: 9px 25px;
+  background: #d54e3e;
+  /* border: none; */
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+
+.header .btn button:hover {
+  background-color: #EEB987;
+  border-color: #CD6A4F;
+  color:black;
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+main, section { 
+  opacity: 0.85; 
+/* background-color: #F5E1CE; */
+}
 
 .imgHome {
     /* width: 100px; */
@@ -135,5 +125,31 @@ li a {
 }
 
 
+/* TITULO */
 
+.titulo h1 {
+  height: 70px;
+  width: auto; 
+  font-size: 330%;
+  text-align: center;
+  margin-top: 5px;
+  /* text-align: center;
+  background-color: #F2F2F2; 
+  background-color: #F5E1CE;
+  font-size: 300%; */
+  
+}
+
+.conteiner-texto {
+  /* opacity: 0.8;  */
+  background-color: #F5E1CE;
+  text-align:justify;
+  margin: 10px;
+  padding: 28px;
+width: 1400px;
+height: 398px;
+
+border: 1px solid #8B7373;
+border-radius: 20px;
+}
   
