@@ -149,7 +149,7 @@ border-radius: 20px;
 
 .conteinerImg {
   display: flex;
-  height: 500px;
+  height: 550px;
   background-color: #CD6A4F;
   justify-content: space-between;
   align-items:center;
@@ -219,8 +219,13 @@ border-radius: 20px;
     border-radius: 15px;
     text-align: center;
     padding: 5px;
-    width:auto;
     margin-top: auto;
+    /* background: #000; 
+    color: #F5E1CE;
+    border: solid 3px #000; */
 
   }
 
+  .card2 .front a {
+    color: #000000;
+  }
