@@ -149,76 +149,30 @@ border-radius: 20px;
 
 .conteinerImg {
   display: flex;
+  height: 500px;
   background-color: #CD6A4F;
   justify-content: space-between;
-  align-items: center;
-  height: 75x;
-  padding: 5px 10%;
+  align-items:center;
+  padding: 30px 10%;
 }
 
-.conteinerImg .card1 .tituloCard1 {
-position: relative;
-left: 48px;
-right: 100px;
-text-align: center;
-border-style: solid;
-  border-width: 6px;
-  border-color: #F5E1CE;
-  border-radius: 20px;
-  height: 56px;
-  width: 110px;
-}
-
-.conteinerImg .imgcard1 {
-  display: flex;
-  border-style: solid;
-  border-width: 8px;
-  border-color: #F5E1CE;
-  border-radius: 20px;
-  /* height: 250px; */
-  height: 400px;
-  width: 210px
-  }
-
-  .conteinerImg .imgcard1 p {
-    position: absolute;
-    left: 200px;
-    right:150px;
-margin-top: 200px;
-
-  text-align: center;
-  border-style: solid;
-  border-width: 6px;
-  border-color: #F5E1CE;
-  border-radius: 20px;
-  height: 200px;
-  width: 120px;
-  }
-
-  .conteinerImg .imgcard1 .textoCard1 {
-    position: relative;
-    left: 100px;
-    right: 100px;
-    text-align: center;
-  }
 
 
   /* CARD 2 */
 
  .card2 {
     position: relative;
-    width: 300px;
-    height: 350px;
+    width: 420px;
+    height: 280px;
+    margin: 20px;
 
   }
 
 .card2 .face {
-position: absolute;
-width: 100%;
-height: 100%;
-border-radius:15px ;
-/* overflow:visible; */
-border-color: #F5E1CE;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius:16px ;
 
   }
 
@@ -227,23 +181,46 @@ border-color: #F5E1CE;
     box-shadow: 0 5px 10px #000;
     border-style: solid;
     border-color: #000000;
+
   }
 
   .card2 .front img {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
-    object-fit:cover;
+    /* object-fit: contain; */
+
   }
 
 .card2 .front h3 {
     position: absolute;
-    width: 100%;
-    height: 10%;
-    line-height: 15px;
-    color: #170101;
-    background: rgba(0, 0, 0, .4);
+    left:16px;
+    right: 18px;
+    width: 85%;
+    /* background: #000; 
+    color: #F5E1CE;
+    border: solid 3px #F5E1CE;*/
+    background: #EEB987;
+    border: solid 3px #000000;
+    box-shadow: 0 5px 10px #000;
+    border-radius: 8px;
     text-align: center;
+    line-height: 30px;
+    height: 30px;
+    bottom: 100%;
+
   }
 
-  /* https://youtu.be/Y1NSVRkQEVI?t=340 */
+  .card2 .front p {
+    position: absolute;
+    background: #EEB987;
+    border: solid 3px #000000;
+    box-shadow: 0 5px 10px #000;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px;
+    width:auto;
+    margin-top: auto;
+
+  }
+
