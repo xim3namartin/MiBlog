@@ -53,11 +53,12 @@ body {
 }
 
 
-
 .header .nav-links {
   list-style: none;
 
 }
+
+
 
 .header .nav-links li {
   display: inline-block;
@@ -65,6 +66,7 @@ body {
   
 }
 
+/*  
 .header .nav-links li:hover {
   transform: scale(1.1);
 }
@@ -74,13 +76,70 @@ body {
   font-size: 700;
   color: black;
   text-decoration: none;
+
+
 }
+
+
 
 
 .header .nav-links li a:hover {
   color:#F5E1CE;
   font-weight: bolder;
 }
+
+*/
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  font-size: 700;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding: 5px 0;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  background: linear-gradient(to right, black , #f88a23,#F5E1CE);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+
+}
+
+
+
+nav ul li a:hover {
+  color:#F5E1CE;
+  font-weight: bolder;
+
+
+}
+
+nav ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+
+}
+
+
 
 
 /* estilos la boton de registro */
@@ -103,9 +162,6 @@ body {
   color:black;
   transform: scale(1.1);
 }
-
-
-
 
 
 
@@ -229,3 +285,49 @@ border-radius: 20px;
   .card2 .front a {
     color: #000000;
   }
+
+  /* FOOTER */
+
+
+  .logoFooter {
+    height: 80px;
+    margin-bottom: 1rem;
+    height: 70px;
+    width: auto;
+    border-radius: 20px;
+  }
+
+
+  /* Estilos del footer */ 
+  footer { 
+    background-color: #333; 
+    color: white; text-align: center; 
+    padding: 15px 0; 
+  } 
+  
+  footer .social-icons { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+  }
+
+  
+  footer .social-icons li { 
+    display: inline-block; 
+  } 
+
+  footer .social-icons a {
+     color: white; 
+     text-decoration: none; 
+     font-size: 24px; 
+     transition: color 0.3s; 
+    } 
+    
+  footer .social-icons a:hover { 
+      color: #d54e3e; /* Cambia el color al pasar el mouse*/
+  
+      } 
+
