@@ -7,6 +7,7 @@
     padding: 0;
     font-family: "LXGW WenKai Mono TC", monospace;
     font-size: 20px;
+    box-sizing: border-box;
 
 }
 
@@ -20,6 +21,7 @@ body {
     /* font-weight: 400;
     font-style: normal; */
     /* background-color: #F5E1CE; */
+
     
 }
 
@@ -33,7 +35,10 @@ body {
   align-items: center;
   height: 75x;
   padding: 5px 10%;
+
 }
+
+
 
 
 .header .logo {
@@ -52,6 +57,10 @@ body {
   transform: scale(1.2);
 }
 
+/* nav {
+  display: flex;
+  justify-content: space-between;
+} */
 
 .header .nav-links {
   list-style: none;
@@ -204,7 +213,7 @@ nav ul li a:hover::after {
   }
   
   
-  .header .nav-links {
+  .nav-links {
     margin: 0;
     padding: 20px 0;
     flex-direction: column;
@@ -263,6 +272,7 @@ nav ul li a:hover::after {
   left: 0;
 
 }
+
 }
 
 
@@ -296,7 +306,8 @@ main  {
 
 .conteiner-texto {
   /* opacity: 0.8;  */
-  background-color: #F5E1CE;
+  background-color: #F5E1CE; 
+  /* background-color:#F2F2F2; */
   text-align:justify;
   margin: 10px;
   padding: 28px;
