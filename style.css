@@ -139,6 +139,18 @@ nav ul li a:hover::after {
 
 }
 
+.nav-toggle {
+  color: #F5E1CE;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+
+  display: none; 
+
+}
+
 
 
 
@@ -164,8 +176,101 @@ nav ul li a:hover::after {
 }
 
 
+/* BREACKPOINT: menu hamburguesa*/
 
-main { 
+@media (max-width:768px) {
+  body {
+    padding-top: 70px;
+
+
+}
+  .header {
+    height:60px;
+
+  }
+  
+  
+  .header .logo {
+    cursor: pointer;
+  }
+  
+  .header .logo img{
+    height: 30px;
+    width: auto;
+    border-radius: 20px;
+    transition: all 0.3s;
+    padding: 0 20px;
+  
+  }
+  
+  
+  .header .nav-links {
+    margin: 0;
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EEB987;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+
+    
+  }
+  
+  nav ul li {
+    line-height: 70px;
+  }
+
+  nav ul li a:hover {
+    color:#d54e3e;
+    font-weight: bolder;
+  
+  
+  }
+
+  nav ul li a::after {
+    background: linear-gradient(to right, #F5E1CE ,#d54e3e,black);
+  
+  }
+
+  .header .btn button {
+    border-radius: 20px;
+    padding: 10px 0;
+
+  }
+  
+  
+  .header .btn button:hover {
+    background-color: #EEB987;
+    border-color: #CD6A4F;
+    color:black;
+    transform: scale(1.1);
+  }
+
+  .nav-toggle {
+  
+    display: block; 
+  
+  }
+  
+.nav-links_visible {
+  left: 0;
+
+}
+}
+
+
+
+
+
+
+main  { 
   opacity: 0.85;  
 /* background-color: #F5E1CE; */
 
@@ -301,6 +406,7 @@ border-radius: 20px;
   /* Estilos del footer */ 
   footer { 
     background-color: #333; 
+    /* background-color: #F5E1CE; */
     color: white; text-align: center; 
     padding: 15px 0; 
   } 
@@ -330,4 +436,9 @@ border-radius: 20px;
       color: #d54e3e; /* Cambia el color al pasar el mouse*/
   
       } 
+
+      footer .textopie {
+        text-decoration: overline;
+
+      }
 
