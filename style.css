@@ -9,6 +9,7 @@
     font-size: 20px;
     box-sizing: border-box;
 
+
 }
 
 
@@ -21,6 +22,8 @@ body {
     /* font-weight: 400;
     font-style: normal; */
     /* background-color: #F5E1CE; */
+    /* padding: 90px 10px 0; */
+
 
     
 }
@@ -30,25 +33,41 @@ body {
 .header {
   /* background-color:  #CD6A4F; */
   background-color: #CD6A4F;
-  display: flex;
+  height: 80px;
+  /* position: fixed;
+  width: 100%;
+  top:0;
+  left: 0; */
+
+  /* display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 75x;
-  padding: 5px 10%;
+  padding: 5px 10%; */
 
 }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 5px 10%; */
 
+  max-width: 922px;
+  margin: 0 auto;
+} 
 
 
 .header .logo {
   cursor: pointer;
+
 }
 
 .header .logo img{
   height: 70px;
   width: auto;
-  border-radius: 20px;
+  padding: 4px;
+  line-height: 80px;
+  border-radius: 22px;
   transition: all 0.3s;
 
 }
@@ -57,68 +76,37 @@ body {
   transform: scale(1.2);
 }
 
-/* nav {
-  display: flex;
-  justify-content: space-between;
-} */
 
-.header .nav-links {
-  list-style: none;
-
+.nav-link {
+  text-decoration: none;
 }
 
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin-right: 40px;
+}
 
-
-.header .nav-links li {
+.nav-menu-item {
   display: inline-block;
   padding: 0 20px;
-  
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  width: max-content;
+
+
 }
 
-/*  
-.header .nav-links li:hover {
-  transform: scale(1.1);
-}
-
-
-.header .nav-links a {
+.nav-menu-link {   
   font-size: 700;
-  color: black;
-  text-decoration: none;
-
-
-}
-
-
-
-
-.header .nav-links li a:hover {
-  color:#F5E1CE;
-  font-weight: bolder;
-}
-
-*/
-
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  font-size: 700;
-  text-decoration: none;
   color: black;
   position: relative;
   padding: 5px 0;
 }
 
-nav ul li a::after {
+
+.nav-menu-link::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -135,18 +123,22 @@ nav ul li a::after {
 
 
 
-nav ul li a:hover {
+.nav-menu-link:hover,
+.nav-menu-link_active  {
   color:#F5E1CE;
   font-weight: bolder;
+  transition: 0.5s;
 
 
 }
 
-nav ul li a:hover::after {
+.nav-menu-link:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 
 }
+
+
 
 .nav-toggle {
   color: #F5E1CE;
@@ -156,14 +148,14 @@ nav ul li a:hover::after {
   padding: 0 20px;
   line-height: 60px;
 
-  display: none; 
+  display: none;
 
 }
 
 
 
 
-/* estilos la boton de registro */
+/* estilos del boton de registro */
 
 .header .btn button {
   font-weight: 700;
@@ -187,80 +179,67 @@ nav ul li a:hover::after {
 
 /* BREACKPOINT: menu hamburguesa*/
 
-@media (max-width:768px) {
-  body {
+@media (max-width: 768px) {
+  body, main {
     padding-top: 70px;
+  }
 
 
-}
   .header {
     height:60px;
+  }
+  
 
+  
+  .logo img {
+    height: 35px;
+    line-height: 60px;
+    padding: 0 30px;
   }
   
   
-  .header .logo {
-    cursor: pointer;
-  }
-  
-  .header .logo img{
-    height: 30px;
-    width: auto;
-    border-radius: 20px;
-    transition: all 0.3s;
-    padding: 0 20px;
-  
-  }
-  
-  
-  .nav-links {
-    margin: 0;
-    padding: 20px 0;
+  .nav-menu {
     flex-direction: column;
     align-items: center;
+    margin: 0;
     background-color: #EEB987;
     position: fixed;
     left: 0;
     top: 60px;
-    width: 100%;
 
+    width: 100%; 
+    padding: 20px 0;
     height: calc(100% - 60px);
     overflow-y: auto;
-    left: 100%;
-    transition: left 0.3s;
 
+    left:100% ;
+    transition: left 0.3s;
     
   }
   
-  nav ul li {
+ .nav-menu-item {
     line-height: 70px;
   }
 
-  nav ul li a:hover {
+  .nav-menu-link:hover {
     color:#d54e3e;
     font-weight: bolder;
   
   
   }
 
-  nav ul li a::after {
+  .nav-menu-link::after {
     background: linear-gradient(to right, #F5E1CE ,#d54e3e,black);
   
   }
 
-  .header .btn button {
-    border-radius: 20px;
-    padding: 10px 0;
-
+  .btn button {
+    font-weight: 400;
+    line-height: 12px;
+    height: 35px;
+    border-radius: 30px;
   }
   
-  
-  .header .btn button:hover {
-    background-color: #EEB987;
-    border-color: #CD6A4F;
-    color:black;
-    transform: scale(1.1);
-  }
 
   .nav-toggle {
   
@@ -268,12 +247,13 @@ nav ul li a:hover::after {
   
   }
   
-.nav-links_visible {
-  left: 0;
+  .nav-menu_visible {
+    left: 0;
+
+  }
 
 }
 
-}
 
 
 

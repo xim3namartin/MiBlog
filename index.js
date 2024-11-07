@@ -1,7 +1,13 @@
 const navToggle = document.querySelector(".nav-toggle")
-const navLinks = document.querySelector(".nav-links")
+const navMenu = document.querySelector(".nav-menu")
 
 navToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("nav-links_visible")
-})
+    navMenu.classList.toggle("nav-menu_visible");
+
+    if (navMenu.classList.contains("nav-menu_visible")) {
+        navToggle.setAttribute("aria-label", "Cerrar menu");
+    }else {
+        navToggle.setAttribute("aria-label", "Abrir menu");
+    }
+});
 
