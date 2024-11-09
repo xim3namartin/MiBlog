@@ -12,7 +12,19 @@
 }
 
 body {
-    background-color: #F5E1CE;
+    /* background-color: #F5E1CE; */
+    
+
+    background: linear-gradient(to top, transparent, rgba(239,46,27,.3)), url(./img/portada2.png);
+
+    /* opacity: 0.85;  */
+
+    background-size: cover ;
+     background-repeat: no-repeat; 
+     background-attachment: fixed; 
+     height: 1000vh;
+     background-position:center;
+
 }
 
 
@@ -76,7 +88,7 @@ body {
 
 /* estilos la boton de registro */
 
-.header .btn button {
+/* .header .btn button {
     font-weight: 700;
     color: #F5E1CE;
     padding: 9px 25px;
@@ -92,7 +104,7 @@ body {
     background-color: #F5E1CE;
     color:black;
     transform: scale(1.1);
-}
+} */
 
 
 
@@ -105,12 +117,15 @@ body {
 /* FORMULARIO */
 
 .fondo-reg {
-    background-image: url(./img/letras2.png);
+    /* background-image: url(./img/letras2.png); */
     background-color:#c4c6c17b;
-    background-size:cover;
+    /* background-size:cover;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right; */
     opacity: 0.9;
+    border-radius: 10px;
+
+
 
 }
 
@@ -118,22 +133,135 @@ body {
     /* background-image: url(./img/letras2.png); */
     background-color: #F2F2F2;
     border-radius: 30px;
-    opacity: 0.9;
+    /* opacity: 0.9; */
     height: 50%;
     width: 50%;
-    margin: 50px auto;
+    margin: 60px auto;
+    /* align-items: center;
     align-content: center;
+    justify-content: center; */
+    border-radius: 30px;
+    padding: 50px;
+    /* border: 1px solid #8B7373;
+    border-radius: 20px; */
+    align-content: center;
+    align-items: center;
+
 }
 
 .registro-form {
     padding: 30px;
     background-color: #F2F2F2;
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
     border-radius: 20px;
-    margin-top: 20px;
-    margin-bottom: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     display: inline-block;
     vertical-align: middle;
-    opacity: 0.9;
+
+    /* opacity: 0.9; */
+    border: 1px solid #8B7373;
 }
+
+/* BOTON CREAR CUENTA */
+
+  .button {
+    display: inline-block;
+    border-radius: 8px;
+    background-color: #d54e3e; 
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 12px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+
+  }
+
+  /* .button:hover {
+   background-color: #8B7373; 
+   background-color: #d54e3e; 
+  } 
+   */
+  .button:hover span {
+    padding-right: 25px;
+
+
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  
+  }
+
+  /* BOTON BORRAR */
+
+  .button-borrar {
+    display: inline-block;
+    border-radius: 8px;
+    background-color: #d54e3e; 
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 15px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  
+  .button-borrar {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+
+  }
+  
+  .button-borrar:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+
+  }
+  
+  .button-borrar:hover {
+    padding-right: 25px;
+    background-color: #8B7373;
+
+
+  }
+  
+  .button-borrar:hover:after {
+    opacity: 1;
+    right: 0;
+  
+  }

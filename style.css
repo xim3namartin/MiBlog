@@ -14,15 +14,23 @@
 
 
 body {
-    background-image: url(./img/letras2.png);
+    /* background-image: url(./img/letras2.png);
     background-size:contain;
     background-repeat: no-repeat;
-    background-position: right;
-    /* opacity: 0.9; */
-    /* font-weight: 400;
-    font-style: normal; */
-    /* background-color: #F5E1CE; */
-    /* padding: 90px 10px 0; */
+    background-position: right; */
+
+    background: linear-gradient(to top, transparent, rgba(239,46,28,.5)), url(./img/portada.png);
+    background: linear-gradient(to top, transparent, rgba(239,46,28,.4)), url(./img/portada.png);
+    background: linear-gradient(to top, transparent, rgba(239,46,27,.3)), url(./img/portada2.png);
+    /* opacity: 0.85;  */
+
+    background-size: cover ;
+     background-repeat: no-repeat; 
+     background-attachment: fixed; 
+     height: 1000vh;
+     background-position:center;
+
+
 
 
     
@@ -258,8 +266,6 @@ body {
 
 
 
-
-
 main  { 
   opacity: 0.85;  
 /* background-color: #F5E1CE; */
@@ -267,7 +273,20 @@ main  {
 }
 
 
+.conteiner-portada {
+  max-width: 10000px;
+  background-color: rgba(0, 0, 0, .7);
+background-color: rgba(60, 53, 53, 0.7); 
+  border-radius: 30px;
+  padding: 50px;
+  margin: 50px;
+  color: #fff;
+  display: flex;
+    justify-content: center;
+    align-items: center; 
+    
 
+}
 
 /* TITULO */
 
@@ -285,9 +304,8 @@ main  {
 }
 
 .conteiner-texto {
-  /* opacity: 0.8;  */
-  background-color: #F5E1CE; 
-  /* background-color:#F2F2F2; */
+  /* background-color: #F5E1CE;  */
+
   text-align:justify;
   margin: 10px;
   padding: 28px;
@@ -307,6 +325,8 @@ border-radius: 20px;
   align-items:center;
   padding: 30px 10%;
 }
+
+
 
 
 
