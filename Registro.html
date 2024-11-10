@@ -6,26 +6,39 @@
     <title>Registro</title>
 
     <link rel="stylesheet" href="styleRegistro.css">
+    <script src="https://kit.fontawesome.com/1e098fcb69.js" crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
 
 </head>
 <body>
         
     <header class="header"> 
-        <div class="logo">
-            <img src="./img/logo7.png" alt="logo del blog">
-        </div>
 
-            <!-- NAV: va la barra de navegacion, las secciones -->
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="libros.html">Libros</a></li>
-                <li><a href="sobremi.html">Sobre mi</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-        </nav>
-        <!-- <a href="Registro.html" class="btn"><button>Registro</button></a> -->
-    </header>
+        <!-- NAV: va la barra de navegacion, las secciones -->
+        <nav class="nav">
+         <div class="logo nav-link">
+             <img src="./img/logo7.png" alt="logo del blog">
+             <!--<h1>Sopa de letras</h1>-->
+         </div>
+
+         <button class="nav-toggle" aria-label="Abrir menu">
+             <i class="fa-solid fa-bars"></i>
+         </button>
+         
+         <ul class="nav-menu">
+             <li class="nav-menu-item"><a href="index.html" class="nav-menu-link nav-link nav-menu-link_active">Home</a></li>
+             <li class="nav-menu-item"><a href="libros.html" class="nav-menu-link nav-link">Libros</a></li>
+             <li class="nav-menu-item"><a href="sobremi.html" class="nav-menu-link nav-link">Sobre mi</a></li>
+             <li class="nav-menu-item"><a href="contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
+             </ul>
+             <a href="Registro.html" class="btn"><button>Registro</button></a>
+     </nav>
+
+     <!-- <a href="Registro.html" class="btn"><button>Registro</button></a>-->
+
+
+</header>
+
 
 
 
@@ -47,8 +60,7 @@
             <label for="">Contraseña</label>
             <input type="password" placeholder="Tu contraseña debe tener entre 5 y 10 caracteres">
             <br><br>
-            <!-- <input type="reset" value="Borrar"> -->
-            <!-- <input type="reset" value="Borrar" class="button-borrar" style="vertical-align:text-bottom"><span></span> -->
+   
             <button type="submit" class="button" style="vertical-align:middle"><span>Crear cuenta </span></button>
 
 

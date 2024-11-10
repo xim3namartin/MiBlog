@@ -6,24 +6,40 @@
     <title>Contacto</title>
 
     <link rel="stylesheet" href="styleContacto.css">
+    <script src="https://kit.fontawesome.com/1e098fcb69.js" crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
 
 </head>
 <body>
-    <header> 
-        <h1>Sopa de letras</h1>
-        <img src="./img/logo7.png" alt="" style="width:90px;height:80px;border-radius: 20%;"> 
+    <header class="header"> 
 
-   </header>
+        <!-- NAV: va la barra de navegacion, las secciones -->
+        <nav class="nav">
+         <div class="logo nav-link">
+             <img src="./img/logo7.png" alt="logo del blog">
+         </div>
 
-    <!-- NAV: va la barra de navegacion, las secciones -->
-   <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="libros.html">Libros</a></li>
-            <li><a href="sobremi.html">Sobre mi</a></li>
-            <li><a href="contacto.html">contacto</a></li>
-        </ul>
-   </nav>
+         <button class="nav-toggle" aria-label="Abrir menu">
+             <i class="fa-solid fa-bars"></i>
+         </button>
+         
+         <ul class="nav-menu">
+             <li class="nav-menu-item"><a href="index.html" class="nav-menu-link nav-link">Home</a></li>
+             <li class="nav-menu-item"><a href="libros.html" class="nav-menu-link nav-link">Libros</a></li>
+             <li class="nav-menu-item"><a href="sobremi.html" class="nav-menu-link nav-link">Sobre mi</a></li>
+             <li class="nav-menu-item"><a href="contacto.html" class="nav-menu-link nav-link nav-menu-link_active">Contacto</a></li>
+             </ul>
+             <a href="Registro.html" class="btn"><button>Registro</button></a>
+     </nav>
+
+
+
+</header>
+
+
+
+
+
 
    <main >
     <div class="fondo-contacto">
@@ -31,19 +47,23 @@
         <div class="tituloSub-form">
     
             <h2 id="titulo-form"> Formulario de contacto</h2>
+            <br>
             <h3 id="subtitle-form">Contame tus inquietudes <br>o si te gustaria compartir alguna reseña de libros</h3>
         </div>
         <div class="recuadro-form">
         
-            <form action="datacolecta.html">
+            <!-- <form action="datacolecta.html"> -->
+        <form action="https://formspree.io/f/mrgnaqgr" method="POST">
         
     
             <input type="text" placeholder="Tu nombre completo">
          
             <br><br>
             <div>
-            <select name="inputOption" id="">
-                <option value>Selecciona una opcion</option>
+                <h4 id="consulta"> Motivo de tu consulta:</h4>
+                <br>   
+            <select name="inputOption" id="inp-consulta">
+                <option value id="opcion">Seleccione una opcion</option>
                 <option value="Consultas">Consultas</option>
                 <option value="Reseña de libros">Reseña de libros</option>
                 <option value="Reclamo">Reclamos</option>   
@@ -52,9 +72,11 @@
 
             </div>
             <div class="contact-form">
-                <h4> ¿Cómo queres que te contacte?</h4>
-                <input type="radio" name="contacto" id="">E-mail
-                <input type="radio" name="contacto" id="">Telefono
+                <br>
+                <h4 id="pregunta"> ¿Cómo queres que te contacte?</h4>
+                <br>
+                <input type="radio" name="contacto" id="radio">E-mail
+                <input type="radio" name="contacto" id="radio">Telefono
                 <br><br>
                 <input type="text" placeholder="Contacto">
 
@@ -68,8 +90,11 @@
             </div>
 
             <br><br>
-            <input type="reset" value="Borrar">
-            <input type="submit" value="Enviar">
+            <input  class="btn-borrar"  type="reset" value="Borrar">
+            <br>
+            <br>
+
+            <button type="submit" class="button-enviar" style="vertical-align:middle"><span class="enviar">Enviar</span></button>
 
         </div>
 
@@ -77,8 +102,25 @@
     </form>
 </section>
 </div>
-   </main>
+  
+</main>
 
+   <!-- FOOTER: va info corporativa-->
+   <footer>
+    <img src="./img/logo7.png" alt="logo del blog" class="logoFooter">
+    <ul class="social-icons"> 
+        <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li> 
+        <li><a href="https://github.com/xim3namartin/" target="_blank"><i class="fa-brands fa-github"></i></a></li> 
+        <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li> 
+        <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li> 
+    </ul> 
+    <br>
+    <div class="textopie">
+    <p>&copy; 2024 Sopa de Letras. Todos los derechos reservados.</p> 
+    </div>
+
+
+</footer>
 
     
 </body>
