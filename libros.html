@@ -1,31 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase 3</title>
+    <title>Mi Blog</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1e098fcb69.js" crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
+
 </head>
 <body>
-    <header>
-        <h1>Libros</h1>
-
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="libros.html">Libros</a></li>
-            <li><a href="sobremi.html">Sobre mi</a></li>
-            <li><a href="contacto.html">contacto</a></li>
-        </ul>
-   </nav>
-
-    <main>
-        <h2>Recomendaciones</h2>
-
-
-    </main>
     
+     <header class="header"> 
+
+           <!-- NAV: va la barra de navegacion, las secciones -->
+           <nav class="nav">
+            <div class="logo nav-link">
+                <img src="./img/logo7.png" alt="logo del blog">
+                <!--<h1>Sopa de letras</h1>-->
+            </div>
+
+            <button class="nav-toggle" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="index.html" class="nav-menu-link nav-link">Home</a></li>
+                <li class="nav-menu-item"><a href="libros.html" class="nav-menu-link nav-link nav-menu-link_active">Libros</a></li>
+                <li class="nav-menu-item"><a href="sobremi.html" class="nav-menu-link nav-link">Sobre mi</a></li>
+                <li class="nav-menu-item"><a href="contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
+                </ul>
+                <a href="Registro.html" class="btn"><button>Registro</button></a>
+        </nav>
+
+        <!-- <a href="Registro.html" class="btn"><button>Registro</button></a>-->
+
+
+   </header>
+   <div class="contenido-grid">
+    <h1>Recomendaciones de libros</h1>
+
+    <main class="content-libros"><!-- <h2>Recomendaciones</h2> -->
+        <article class="article">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sint nemo eaque optio unde quod eligendi voluptates laborum libero? Commodi?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, laboriosam.</p>
+        </article>
+        <article class="article">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sint nemo eaque optio unde quod eligendi voluptates laborum libero? Commodi?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, laboriosam.</p>
+        </article>
+        <article class="article">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sint nemo eaque optio unde quod eligendi voluptates laborum libero? Commodi?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, laboriosam.</p>
+        </article>
+    </main>
+
+    <aside class="sidebar">
+        <div>
+            <img src="./img/book1.png" alt="" height="300px" width="200px">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, nisi.</p>
+        </div>
+        <div>
+            <img src="./img/book2.png" alt="" height="300px" width="200px">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, nisi.</p>
+        </div>
+        <div>
+            <img src="./img/book3.png" alt="" height="300px" width="200px">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, nisi.</p>
+        </div>
+    </aside>
+
+    <div class="related-books">
+        Otras recomedaciones
+    </div>
+    <div class="related-books">
+        Otras recomedaciones
+    </div>
+    <div class="related-books">
+        Otras recomedaciones
+    </div>
+    <div class="related-books">
+        Otras recomedaciones
+    </div>
+    <div class="related-books">
+        Otras recomedaciones
+    </div>
+</div>
+
     <section>
 
         <!--VIDEO con ENLACE-->
@@ -47,10 +110,22 @@
 
     </section>
 
-    <footer>
-        <p>direccion</p>
+        <!-- FOOTER: va info corporativa-->
+<footer>
+    <img src="./img/logo7.png" alt="logo del blog" class="logoFooter">
+    <ul class="social-icons"> 
+        <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li> 
+        <li><a href="https://github.com/xim3namartin/" target="_blank"><i class="fa-brands fa-github"></i></a></li> 
+        <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li> 
+        <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li> 
+    </ul> 
+    <br>
+    <div class="textopie">
+    <p>&copy; 2024 Sopa de Letras. Todos los derechos reservados.</p> 
+    </div>
 
-    </footer>
+
+</footer>
 
 </body>
 </html>

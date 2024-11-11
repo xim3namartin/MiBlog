@@ -545,8 +545,81 @@ text-decoration:underline;
 }
 
 
+/* SECCION PAGINA DE LIBROS */
+
+.contenido-grid{
+
+  background-color:#c4c6c17b;
+  opacity: 0.9;
+  width: 90%;
+  max-width: 1000px;
+  margin: 1.6em auto;
+
+  display: grid;
+  gap: 1.6em; /* para darle espacio a los contenedores */
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* estilos solo para visualizar mejor mi contenido */
+
+.contenido-grid h1 {
+  grid-column: 1/6;
+
+}
+
+.contenido-grid .content-libros{
+  grid-column: span 3;
+
+}
+
+.content-libros .article {
+  background-color: #F2F2F2;
+  background: #F5E1CE;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 8px;
+}
+
+.content-libros .article h1, 
+.content-libros .article p {
+  padding: 10px;
+}
 
 
+.contenido-grid .sidebar{
+  grid-column: span 2;
+  background: #F5E1CE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+
+}
+
+.contenido-grid .sidebar img {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+
+}
+
+.contenido-grid .related-books {
+  background: #c43323;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+
+
+}
+
+.contenido-grid .related-books:hover {
+  cursor: pointer;
+  color: #000;
+  background: #8B7373;
+}
 
 
 
