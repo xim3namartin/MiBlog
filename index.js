@@ -26,3 +26,15 @@ document.getElementById('btn-mas').addEventListener('click', function () {
     });
 });
 
+
+
+
+
+//Funcion para BTN - BIBLIOTECA//
+
+
+    document.getElementById('.btn-todos').addEventListener('click', function() {
+        document.getElementById('todos').scrollIntoView({ behavior: 'smooth' });
+    });
+
+

@@ -12,155 +12,262 @@
 
 </head>
 <body>
-    <div class="navbarB">
-        <a href="#">
-         TODO
-        </a>
-        <a href="#">
-        FAVORITOS
-        </a>
-        <a href="#">
-         LO NUEVO
-        </a>
-        <a href="#">
-         ESPECIALES
-        </a>
+
+   <header class="header"> 
+
+      <!-- NAV: va la barra de navegacion, las secciones -->
+      <nav class="nav">
+       <div class="logo nav-link">
+           <img src="./img/logo7.png" alt="logo del blog">
+           <!--<h1>Sopa de letras</h1>-->
        </div>
-<section id="conteiner-books">
+
+       <button class="nav-toggle" aria-label="Abrir menu">
+           <i class="fa-solid fa-bars"></i>
+       </button>
+       
+       <ul class="nav-menu">
+           <li class="nav-menu-item"><a href="index.html" class="nav-menu-link nav-link nav-menu-link_active">Home</a></li>
+           <li class="nav-menu-item"><a href="libros.html" class="nav-menu-link nav-link">Libros</a></li>
+           <li class="nav-menu-item"><a href="sobremi.html" class="nav-menu-link nav-link">Sobre mi</a></li>
+           <li class="nav-menu-item"><a href="contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
+           </ul>
+           <a href="Registro.html" class="btn"><button>Registro</button></a>
+   </nav>
+
+   <!-- <a href="Registro.html" class="btn"><button>Registro</button></a>-->
 
 
-       <div class="book-collection">
-        <div class="book-item">
-         <img alt="Book cover of El chico perdido by Thomas Wolfe" height="300" src="https://storage.googleapis.com/a1aa/image/e10QJY7QfjjHeIFK8gTW5gjJHmJ2LRS25GgZ8Vw9CCAegWuPB.jpg" width="200"/>
-         <div class="book-title">
-            <h4>El chico perdido</h4>
+</header>
+
+   <section class="section_header">
+      <div class="container_library">
+         <div class="contenido_libros">
+         <div class="title_library">
+          <h2>Bienvenidos a Mi Biblioteca</h2>
+          <br>
+          <p>En esta seccion podras descubrir todos aquellos libros que lei a lo largo de mi vida, <br>una variada colección de diferentes géneros y épocas, <br>desde clásicos atemporales hasta los últimos publicados.</p>
+       <br>
+
+      <!-- BOTONES BIBLIOTECA -->
+         <div class="container_btn">
+            <button  id="btn-todos"  class="btn_btn"><i class="fa-solid fa-book" style="color: #000000;"></i> Todos</button>
+            <button class="btn_btn"><i class="fa-regular fa-heart" style="color: #000000;"></i> Mis favoritos</button>
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="search" class="search-input" placeholder="Que Buscas?">
+            </div>
          </div>
-         <div class="book-author">
-          <p>Thomas Wolfe</p>
+      </div>
+
          </div>
-        </div>
-        <div class="book-item">
-         <img alt="Book cover of Los años lejanos by Konstantín Paustovski" height="300" src="https://storage.googleapis.com/a1aa/image/tCUpg4fHa2U1Mys5fznIw8kfTq54I5dkYvKJSZQpNQ1aQL3nA.jpg" width="200"/>
-         <div class="book-title">
-          Los años lejanos
-         </div>
-         <div class="book-author">
-          Konstantín Paustovski
-         </div>
-        </div>
-        <div class="book-item">
-         <img alt="Book cover of No parava de ploure by Don Carpenter" height="300" src="https://storage.googleapis.com/a1aa/image/9rR9fwQNUQy1O6kDk4wiAiYnhQqdaI7NdJFa1yiCeenhQL3nA.jpg" width="200"/>
-         <div class="book-title">
-          No parava de ploure
-         </div>
-         <div class="book-author">
-          Don Carpenter
-         </div>
-        </div>
-        <div class="book-item">
-         <img alt="Book cover of Caía una lluvia intensa by Don Carpenter" height="300" src="https://storage.googleapis.com/a1aa/image/csUZWZytCKKvDdIzq9Ofr18PycUAbe0Dkn5pDTWWan9Mol7TA.jpg" width="200"/>
-         <div class="book-title">
-          Caía una lluvia intensa
-         </div>
-         <div class="book-author">
-          Don Carpenter
-         </div>
-        </div>
-        <div class="book-item">
-            <img alt="Book cover of 'Los Burnell' by Katherine Mansfield with a light beige background and illustrations of windows." height="300" src="https://storage.googleapis.com/a1aa/image/3PE6nwoMJD4oCBcPYTjlJaHvrc68x8dTXUDwNOIvkQwzey9JA.jpg" width="200"/>
+         <br>
+          <!-- SECCION TODOS LOS LIBROS -->
+           <div  class="todos_loslibros">
+
+
+               <div id="todos" class="conteiner-books">
+                  <h3 class="subtitle_library">Todos los libros</h3>
+                  <div class="book-collection">
+                     <div class="book-item">
+                        <img alt="Book cover of El chico perdido by Thomas Wolfe" height="300" src="https://storage.googleapis.com/a1aa/image/e10QJY7QfjjHeIFK8gTW5gjJHmJ2LRS25GgZ8Vw9CCAegWuPB.jpg" width="200"/>
+
+                     <div class="book-title">
+                        <h4>El chico perdido</h4>
+                     </div>
+                     <div class="book-author">
+                        <p>Thomas Wolfe</p>
+                     </div>
+               </div>
+ 
+            <div class="book-item">
+                <img alt="Book cover of Los años lejanos by Konstantín Paustovski" height="300" src="https://storage.googleapis.com/a1aa/image/tCUpg4fHa2U1Mys5fznIw8kfTq54I5dkYvKJSZQpNQ1aQL3nA.jpg" width="200"/>
             <div class="book-title">
-                Los Burnell
-            </div>
-            <div class="book-author">
-                Katherine Mansfield
-            </div>
-           </div>
-
-           <div class="book-item">
-            <img alt="Book cover of 'Noche y Día' by Virginia Woolf with a dark blue background and a pattern of suns and moons." height="300" src="https://storage.googleapis.com/a1aa/image/LZ3SPeyzSTyifEFnA6VlHrGoIbeANKM9bLaqB3apAeIDtXuPB.jpg" width="200"/>
-            <div class="book-title">
-               <h4>Noche y Día</h4>
-            </div>
-            <div class="book-author">
-             <p>Virginia Woolf </p>
-            </div>
-           </div>
-
-           <div class="book-item">
-            <img alt="Book cover of 'Agilmente' by Estanislao Bachrach with a dark blue background and a pattern of suns and moons." height="300" src="https://www.penguinlibros.com/ar/902839/agilmente.jpg" width="200"/>
-            <div class="book-title">
-               <h4>Agilmente</h4>
-            </div>
-            <div class="book-author">
-             <p>Estanislao Bachrach </p>
-            </div>
-           </div>
-
-           <div class="book-item">
-            <img alt="Book cover of 'trapa al pez dorado' by David Lynch with a dark blue background and a pattern of suns and moons." height="300" src="https://imagessl4.casadellibro.com/a/l/t7/34/9788439729334.jpg" width="200"/>
-            <div class="book-title">
-               <h4>Atrapa al pez dorado</h4>
-            </div>
-            <div class="book-author">
-             <p>David Lynch </p>
-            </div>
-           </div>
-
-           <div class="book-item">
-            <img alt="Book cover of 'trapa al pez dorado' by David Lynch with a dark blue background and a pattern of suns and moons." height="300" src="https://www.marcialpons.es/media/img/portadas/2018/11/20/9788433973382.jpg" width="200"/>
-            <div class="book-title">
-               <h4>El hombre que confundio a su mujer con un sombrero</h4>
-            </div>
-            <div class="book-author">
-             <p>Oliver Sacks</p>
-            </div>
-           </div>
-
-
-           <div class="book-item">
-            <img alt="Book cover of 'Nuestra parte de noche' by Mariana Enriquez with a dark blue background and a pattern of suns and moons." height="300" src="https://www.librosyliteratura.es/wp-content/uploads/2020/01/nuestra-parte-de-noche-scaled.jpeg" width="200"/>
-            <div class="book-title">
-               <h4>Nuestra parte de noche</h4>
-            </div>
-            <div class="book-author">
-             <p>Mariana Enriquez</p>
-            </div>
-           </div>
-
-           <div class="book-item">
-            <img alt="Book cover of 'Nuestra parte de noche' by Mariana Enriquez with a dark blue background and a pattern of suns and moons." height="300" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1685564669i/169133181.jpg" width="200"/>
-            <div class="book-title">
-               <h4>La dama de las camelias</h4>
-            </div>
-            <div class="book-author">
-             <p>Alexandre Dumas</p>
-            </div>
-           </div>
-
-           <div class="book-item">
-            <img alt="Book cover of 'Nuestra parte de noche' by Mariana Enriquez with a dark blue background and a pattern of suns and moons." height="300" src="https://buchhexe.com/wp-content/uploads/2013/04/Patrick-Sueskind-Das-Parfuem.jpg" width="200"/>
-            <div class="book-title">
-               <h4>Das perfum</h4>
-            </div>
-            <div class="book-author">
-             <p>Patrick Süskind</p>
-            </div>
-           </div>
-
-
-
+           <h4>Los años lejanos</h4>
           </div>
-        </section>
-
+          <div class="book-author">
+           <p>Konstantín Paustovski</p>
+          </div>
+         </div>
+ 
+         <div class="book-item">
+          <img alt="Book cover of No parava de ploure by Don Carpenter" height="300" src="https://cdnlaol.laanonimaonline.com/web/images/productos/b/0000009000/9230.jpg" width="200"/>
+            <div class="book-title">
+               <h4>Indias Blancas</h4>
+            </div>
+               <div class="book-author">
+                  <p>Florencia Bonelli</p>
+               </div>
+            </div>
+ 
+         <div class="book-item">
+          <img alt="Book cover of Caía una lluvia intensa by Don Carpenter" height="300" src="https://storage.googleapis.com/a1aa/image/csUZWZytCKKvDdIzq9Ofr18PycUAbe0Dkn5pDTWWan9Mol7TA.jpg" width="200"/>
+            <div class="book-title">
+               <h4>Caía una lluvia intensa</h4>
+            </div>
+       
+            <div class="book-author">
+               <p>Don Carpenter</p>
+            </div>
+         </div>
+ 
+         <div class="book-item">
+             <img alt="Book cover of 'Los Burnell' by Katherine Mansfield with a light beige background and illustrations of windows." height="300" src="https://storage.googleapis.com/a1aa/image/3PE6nwoMJD4oCBcPYTjlJaHvrc68x8dTXUDwNOIvkQwzey9JA.jpg" width="200"/>
+             <div class="book-title">
+                 <h4>Los Burnell</h4>
+             </div>
+             <div class="book-author">
+                <p>Katherine Mansfield</p> 
+             </div>
+            </div>
+ 
+            <div class="book-item">
+             <img alt="Book cover of 'Noche y Día' by Virginia Woolf with a dark blue background and a pattern of suns and moons." height="300" src="https://storage.googleapis.com/a1aa/image/LZ3SPeyzSTyifEFnA6VlHrGoIbeANKM9bLaqB3apAeIDtXuPB.jpg" width="200"/>
+             <div class="book-title">
+                <h4>Noche y Día</h4>
+             </div>
+             <div class="book-author">
+              <p>Virginia Woolf </p>
+             </div>
+            </div>
+ 
+            <div class="book-item">
+             <img alt="Book cover of 'Agilmente' by Estanislao Bachrach with a dark blue background and a pattern of suns and moons." height="300" src="https://www.penguinlibros.com/ar/902839/agilmente.jpg" width="200"/>
+             <div class="book-title">
+                <h4>Agilmente</h4>
+             </div>
+             <div class="book-author">
+              <p>Estanislao Bachrach </p>
+             </div>
+            </div>
+ 
+            <div class="book-item">
+             <img alt="Book cover of 'trapa al pez dorado' by David Lynch with a dark blue background and a pattern of suns and moons." height="300" src="https://imagessl4.casadellibro.com/a/l/t7/34/9788439729334.jpg" width="200"/>
+             <div class="book-title">
+                <h4>Atrapa al pez dorado</h4>
+             </div>
+             <div class="book-author">
+              <p>David Lynch </p>
+             </div>
+            </div>
+ 
+            <div class="book-item">
+             <img alt="Book cover of 'trapa al pez dorado' by David Lynch with a dark blue background and a pattern of suns and moons." height="300" src="https://www.marcialpons.es/media/img/portadas/2018/11/20/9788433973382.jpg" width="200"/>
+             <div class="book-title">
+                <h4>El hombre que confundio a su mujer con un sombrero</h4>
+             </div>
+             <div class="book-author">
+              <p>Oliver Sacks</p>
+             </div>
+            </div>
+ 
+ 
+            <div class="book-item">
+             <img alt="Book cover of 'Nuestra parte de noche' by Mariana Enriquez with a dark blue background and a pattern of suns and moons." height="300" src="https://www.librosyliteratura.es/wp-content/uploads/2020/01/nuestra-parte-de-noche-scaled.jpeg" width="200"/>
+             <div class="book-title">
+                <h4>Nuestra parte de noche</h4>
+             </div>
+             <div class="book-author">
+              <p>Mariana Enriquez</p>
+             </div>
+            </div>
+ 
+            <div class="book-item">
+             <img alt="Book cover of 'Nuestra parte de noche' by Mariana Enriquez with a dark blue background and a pattern of suns and moons." height="300" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1685564669i/169133181.jpg" width="200"/>
+             <div class="book-title">
+                <h4>La dama de las camelias</h4>
+             </div>
+             <div class="book-author">
+              <p>Alexandre Dumas</p>
+             </div>
+            </div>
+ 
+            <div class="book-item">
+             <img alt="Book cover of 'Nuestra parte de noche' by Mariana Enriquez with a dark blue background and a pattern of suns and moons." height="300" src="https://buchhexe.com/wp-content/uploads/2013/04/Patrick-Sueskind-Das-Parfuem.jpg" width="200"/>
+             <div class="book-title">
+                <h4>Das perfum</h4>
+             </div>
+             <div class="book-author">
+              <p>Patrick Süskind</p>
+             </div>
+            </div>
+ 
+         </div>
  
 
+      </div>
+
+      <br>
+
+      <!-- SECCION FAVORITOS -->
+       <div class="mis_favoritos">
+        <div class="conteiner-books">
+         <h3 class="subtitle_library">Mis Favoritos</h3>
+         <div class="book-collection">
+      
+      
+      
+            <div class="book-item">
+               <img alt="Book cover of 'Nuestra parte de noche' by Mariana Enriquez with a dark blue background and a pattern of suns and moons." height="300" src="https://mestasediciones.com/wp-content/uploads/2020/06/C61-Cumbres-borrascosas.jpg" width="200"/>
+               <div class="book-title">
+                  <h4>Cumbres borrascosas</h4>
+               </div>
+               <div class="book-author">
+                <p>Emily Brontë</p>
+               </div>
+              </div>
+      
+              <div class="book-item">
+               <img alt="Book cover of 'Nuestra parte de noche' by Mariana Enriquez with a dark blue background and a pattern of suns and moons." height="300" src="https://i.pinimg.com/originals/8a/d1/86/8ad186211ca1de19587576911d6bd434.jpg" width="200"/>
+               <div class="book-title">
+                  <h4>Un saco de huesos</h4>
+               </div>
+               <div class="book-author">
+                <p>Stephen King</p>
+               </div>
+              </div>
+      
+              <div class="book-item">
+               <img alt="Book cover of 'Nuestra parte de noche' by Mariana Enriquez with a dark blue background and a pattern of suns and moons." height="300" src="https://m.media-amazon.com/images/I/913coXtlQHL._SL1500_.jpg" width="200"/>
+               <div class="book-title">
+                  <h4>Cuentos de Eva Luna</h4>
+               </div>
+               <div class="book-author">
+                <p>Isabel Allende</p>
+               </div>
+              </div>
+      
+      
+              <div class="book-item">
+               <img alt="Book cover of 'Nuestra parte de noche' by Mariana Enriquez with a dark blue background and a pattern of suns and moons." height="300" src="https://i.pinimg.com/736x/df/56/75/df56758ccd0a2b500d5d135377c10dc0.jpg" width="200"/>
+               <div class="book-title">
+                  <h4>El amor en los tiempos del colera</h4>
+               </div>
+               <div class="book-author">
+                <p>Gabriel García Márquez</p>
+               </div>
+              </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+         </div>
+         </div>
+      
+      
+      </div>
+
+
+  </section>
 
 
 
-
-
-
-         </body>
-        </html>
+      </body>
+      </html>
         
      
