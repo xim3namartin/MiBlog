@@ -949,6 +949,78 @@ display: flex;
 
 
 
+/* CARRUSEL */
+
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #CD6A4F;
+  opacity: 0.9; 
+
+
+
+}
+
+.libros-list .libros-item {
+  color: #fff;
+  width: 400px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  backdrop-filter: blur(30px);
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+
+
+
+.libros-list .libros-item .book-image{
+  width: 200px;
+  height: 300px;
+  margin-bottom: 22px;
+  border: 1px solid #948d8d;
+  border: 4px solid #0a0a0a;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+
+.libros-list .libros-item .book-autor {
+  font-size: 1.15rem;
+  color: #e3e3e3;
+  font-weight: 500;
+  margin: 14px 0 40px;
+
+}
+
+
+.libros-list .libros-item .mesage-button {
+  font-size: 1.25rem;
+  padding: 10px 35px;
+  color: #030728;
+  border-radius: 6px;
+  font-weight: 400;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fff;
+  color: #fff;
+  transition: 0.2s ease;
+}
+
+
+.libros-list .libros-item .mesage-button:hover{
+  color: #030728;
+  background: #fff;
+  border: 1px solid transparent;
+
+
+}
 
 
 
