@@ -241,36 +241,27 @@ body {
 
 /* FORMULARIO */
 
-.fondo-reg {
-
+.fondoReg {
     background-color:#c4c6c17b;
     opacity: 0.9;
     border-radius: 10px;
 
-
 }
 
-.conteiner-registro {
-    /* background-image: url(./img/letras2.png); */
+.conteinerRegistro {
     background-color: #F2F2F2;
     border-radius: 30px;
-    /* opacity: 0.9; */
     height: 50%;
     width: 50%;
     margin: 60px auto;
-    /* align-items: center;
-    align-content: center;
-    justify-content: center; */
     border-radius: 30px;
     padding: 50px;
-    /* border: 1px solid #8B7373;
-    border-radius: 20px; */
     align-content: center;
     align-items: center;
 
 }
 
-.registro-form {
+.registroForm {
     padding: 30px;
     background-color: #F2F2F2;
     height: 100%;
@@ -280,26 +271,21 @@ body {
     margin-bottom: 40px;
     display: inline-block;
     vertical-align: middle;
-
-    /* opacity: 0.9; */
     border: 1px solid #8B7373;
 
 }
 
 
 
-#input-reg {
+input {
   font-size: 15px;
   width: 66%;
   border-radius: 5px; 
-   /* border: 1px solid #8B7373;  */
    border: 1px solid #F5E1CE; 
   outline: none; 
   text-align: justify;
   padding: 8px;
   background-color: #F5E1CE;
-/* color: #1d1d1d; */
-  /* background-color: #F5E1CE;*/
 }
 
 /* BOTON CREAR CUENTA */
@@ -405,3 +391,12 @@ body {
     right: 0;
   
   }
+
+.warnings {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: #902d03;
+  padding-top: 20px;
+  font-weight: bold;
+}

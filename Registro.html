@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="styleRegistro.css">
     <script src="https://kit.fontawesome.com/1e098fcb69.js" crossorigin="anonymous"></script>
-    <script defer src="index.js"></script>
+
 
 </head>
 <body>
@@ -34,7 +34,6 @@
              <a href="Registro.html" class="btn"><button>Registro</button></a>
      </nav>
 
-     <!-- <a href="Registro.html" class="btn"><button>Registro</button></a>-->
 
 
 </header>
@@ -43,36 +42,38 @@
 
 
 <main>
-<div class="fondo-reg">
-    <div class="conteiner-registro">
-    <h2>Registro de usuario</h2>
+<div class="fondoReg">
+    <div class="conteinerRegistro">
+        <h2>Registro de usuario</h2>
 
-    <form action="datosRegistro.html">
-        <div class="registro-form">
-        
-            <label for="">Nombre</label>
-            <input type="text" id="input-reg" placeholder="Escriba su nombre completo">
-            <br><br>
-            <label for="">Correo electronico</label>
-            <input type="email" id="input-reg" placeholder="nombre@mail.com">
-            <br><br>
-            <label for="">Contraseña</label>
-            <input type="password" id="input-reg" placeholder="Tu contraseña debe tener entre 5 y 10 caracteres">
-            <br><br>
-   
-            <button type="submit" class="button" style="vertical-align:middle"><span>Crear cuenta </span></button>
+        <form action="datosRegistro.html" id="miFormulario">
+            <div class="registroForm">
+            
+                <label for="">Nombre</label>
+                <input type="text" writingsuggestions="enabled"   id="name" placeholder="Escriba su nombre completo">
+                <br><br>
+                <label for="">Correo electronico</label>
+                <input type="email" id="email" placeholder="nombre@mail.com">
+                <br><br>
+                <label for="">Contraseña</label>
+                <input type="password" id="password" placeholder="Tu contraseña debe tener hasta 8 caracteres">
+                <br><br>
+    
+                <button type="submit" class="button" style="vertical-align:middle" value="Enviar"><span>Crear cuenta </span></button>
+                <br>
+               <p class="warnings" id="warnings"></p>
 
 
-        </div>
-    </form>
-
+            </div>
+        </form>
     </div>
-
 </div>
+
+
+
 </main>
 
-
+<script src="reg.js"></script>
 
 </body>
-
 </html>
