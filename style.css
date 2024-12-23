@@ -357,22 +357,6 @@ text-decoration:none;
 
 
 
-
-
-/* .conteinerImg {
-  display: flex;
-  height: 550px;
-  background-color: #CD6A4F;
-  justify-content: space-between;
-  align-items:center;
-  padding: 30px 10%;
-}  */
-
-
-
-
-
-
 /*Seccion: CARDS*/
 
 #seccioncard {
@@ -541,14 +525,19 @@ text-decoration:underline;
 }
 
 
-/* SECCION PAGINA DE LIBROS */
 
-.contenido-grid{
 
+/* SECCION RECOMENDACIONES Y NOVEDADES */
+
+.cont-recom{
   background-color:#c4c6c17b;
   opacity: 0.9;
+}
+.contenido-grid{
+  background-color:#CD6A4F;
+  opacity: 0.9;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1000px; 
   margin: 2.6em auto;
 
   display: grid;
@@ -561,16 +550,20 @@ text-decoration:underline;
 
 .contenido-grid h1 {
   grid-column: 2/6;
-  font-size: 35px;
-
-
-
+  font-size: 38px;
+  text-decoration: underline;
+  color: #fff;
 
 }
 
 .contenido-grid .content-libros{
   grid-column: span 3;
 
+}
+
+
+.content-libros .article h2{
+  font-size: 28px;
 
 }
 
@@ -922,7 +915,7 @@ display: flex;
 
 .book-item img {
   width: 100%;
-  height: auto;
+  height: 250px;
   max-width: 200px;
   /* border: 1px solid #948d8d;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -934,15 +927,6 @@ display: flex;
 }
 
 
-
-/* .book-item img {
-  transition: transform 0.5s ease;
-}
-
-.book-item img:hover {
-  transform: scale(1.1);
- 
-} */
 
 
 .book-title {
@@ -958,17 +942,19 @@ display: flex;
 
 
 .book-collection .book-item .mesage-button {
-  font-size: 12px;
+  font-size: 5px;
   margin-top: 32px;
-  padding: 13px 18px;
-  border-radius:30px;
-  font-weight: 20px;
+  padding: 13px 16px;
+  border-radius:20px;
+  font-weight: 10px;
   cursor: pointer;
   color: #fff;
   transition: 0.2s ease;
   color: #222222;
+  /* color: #CD6A4F; */
   background: #fff;
   border: 2px solid #948d8d;
+ 
 
 
 }
@@ -976,8 +962,10 @@ display: flex;
 
 .book-collection .book-item .mesage-button:hover{
   color: #CD6A4F;
+  color: #222222;
   background: rgba(255, 255, 255, 0.1);
-
+  box-shadow: 0 5px 10px #000;
+  background-color: #EEB987
 
 }
 
@@ -1177,6 +1165,22 @@ display: flex;
     
     }
     
+  .contenedor-poemas{
+      opacity: 0.85;  
+  
+      background-color: #F2F2F2;
+      background-color:#c4c6c17b;
+      border-radius: 100px;
+      align-content: center;
+      align-items: center;
+      padding: 50px;
+      margin: 50px auto; 
+      height: 50%;
+      width: 50%;
+      margin: 70px auto;
+  
+  }
+  
     
     .micontenedor {
         /* max-width: 10000px; */

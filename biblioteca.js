@@ -32,19 +32,35 @@ document.getElementById('btn-fav').addEventListener('click', function () {
 
 
 //Funcion para mostrar la descripcion del libro
- function toggleDescription() {
-     const description = document.querySelector('.description');
-     const button = document.querySelector('button');
-    if (description.style.display === 'none') {
-         description.style.display = 'block';
-         button.textContent = 'Ocultar Descripción';
-    } else {
-        description.style.display = 'none';
-        button.textContent = 'Mostrar Descripción';
-    }
- }
+//  function toggleDescription() {
+//      const description = document.querySelector('.description');
+//      const button = document.querySelector('button');
+//     if (description.style.display === 'none') {
+//          description.style.display = 'block';
+//          button.textContent = 'Ocultar Descripción';
+//     } else {
+//         description.style.display = 'none';
+//         button.textContent = 'Mostrar Descripción';
+//     }
+//  }
 
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.mesage-button');
 
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const item = button.closest('.book-item');
+            const description = item.querySelector('.description');
 
+            // Ocultar todas las descripciones
+            document.querySelectorAll('.description').forEach(desc => {
+                desc.style.display = 'none';
+            });
+
+            // Mostrar la descripción de la tarjeta seleccionada
+            description.style.display = 'block';
+        });
+    });
+});

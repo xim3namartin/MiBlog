@@ -324,7 +324,7 @@ body{
     outline: none;
   }
 
-  #inp-consulta {
+  #inputOption {
     padding: 12px 20x;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -334,6 +334,37 @@ body{
   #consulta {
     color: #1d1d1d;
   }
+
+  .form-control {
+    padding: 12px 20x;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #e8d0b9;
+    outline: none;
+  }
+
+  #floatingTextarea2 {
+    width: 325px;
+  }
+
+
+  .mensaje-exito {
+    color: green;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  /* Estilos para mensaje de error */
+  .mensaje-error {
+    color: red;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+
+
 
 
   /* BOTONES DEL FORMULARIO */
@@ -482,7 +513,7 @@ body{
  
       }
 
-      #radio {
+      #email #telefono{
         padding: 5px 10px;
         margin-bottom: 0;
         margin-top: 0;

@@ -7,7 +7,6 @@
 
     <link rel="stylesheet" href="styleContacto.css">
     <script src="https://kit.fontawesome.com/1e098fcb69.js" crossorigin="anonymous"></script>
-    <script defer src="index.js"></script>
 
 </head>
 <body>
@@ -38,9 +37,6 @@
 
 
 
-
-
-
    <main >
     <div class="fondo-contacto">
     <section id="formulario" class="fondo-form">
@@ -53,16 +49,18 @@
         <div class="recuadro-form">
         
             <!-- <form action="datacolecta.html"> -->
-        <form action="https://formspree.io/f/mrgnaqgr" method="POST">
+        <form  id="form" name="miformulario"  action="https://formspree.io/f/xdkkoawk" method="POST">
+
+            <!-- action="https://formspree.io/f/mrgnaqgr" method="POST"-->
         
     
-            <input type="text" placeholder="Tu nombre completo">
+            <input id="inputName" type="text" class="form-control" placeholder="Nombre completo" required>
          
             <br><br>
             <div>
                 <h4 id="consulta"> Motivo de tu consulta:</h4>
                 <br>   
-            <select name="inputOption" id="inp-consulta">
+            <select name="inputOption" id="inputOption" class="form-select"  required>
                 <option value id="opcion">Seleccione una opcion</option>
                 <option value="Consultas">Consultas</option>
                 <option value="Reseña de libros">Reseña de libros</option>
@@ -75,30 +73,32 @@
                 <br>
                 <h4 id="pregunta"> ¿Cómo queres que te contacte?</h4>
                 <br>
-                <input type="radio" name="contacto" id="radio">E-mail
-                <input type="radio" name="contacto" id="radio">Telefono
+                <input type="radio" name="email" value="email" id="email" checked>E-mail
+                <input type="radio" name="contacto" value="telefono" id="telefono">Telefono
                 <br><br>
-                <input type="text" placeholder="Contacto">
+                <input id="inputContact" type="text" class="form-control" placeholder="Contacto"
+                aria-label="opción" required>
 
             </div>
 
             <br><br>
 
-            <div class="form-text">
-                <input type="text" placeholder="Escribir aqui..." maxlength="100" style="height: 150px">
-
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Escribir aqui..." maxlength="100" id="floatingTextarea2"
+                    style="height: 150px" required></textarea>
             </div>
+
 
             <br><br>
             <input  class="btn-borrar"  type="reset" value="Borrar">
             <br>
             <br>
 
-            <button type="submit" class="button-enviar" style="vertical-align:middle"><span class="enviar">Enviar</span></button>
+            <button type="submit" class="button-enviar" id="botonEnvio" style="vertical-align:middle"><span class="enviar">Enviar</span></button>
 
         </div>
 
-
+        <p id="mensajeGeneral"></p>
     </form>
 </section>
 </div>
@@ -121,7 +121,7 @@
 
 
 </footer>
-
+<script src="contacto.js"></script>
     
 </body>
 </html>
