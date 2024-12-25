@@ -518,6 +518,7 @@ background: rgba(68, 65, 65, 0.7);
   -webkit-text-fill-color: #0b0b0b;
   text-shadow:#0b0b0b;
   box-shadow: 0 5px 10px #000;
+  cursor: pointer;
 }
 
 
@@ -1078,21 +1079,29 @@ display: flex;
 .cont-recom{
   background-color:#c4c6c17b;
   opacity: 0.9;
+  padding: 70px;
 }
 .contenido-grid{
   background-color:#CD6A4F;
-  opacity: 0.9;
   width: 100%;
-  max-width: 1000px; 
-  margin: 2.6em auto;
+  padding: 60px;
 
+  /* max-width: 1000px;  */
+  margin: 2.6em auto;
   display: grid;
   gap: 0.6em; /* para darle espacio a los contenedores */
   grid-template-columns: repeat(4, 2fr);
+  border-radius: 15px;
+  margin-bottom: 10px;
+  margin-top: 12px;
 
-  border-radius: 10px;
+
 }
 
+.content-libros .article {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  border: solid 1px rgba(68, 65, 65, 0.7);
+}
 
 .contenido-grid h1 {
   grid-column: 2/6;
@@ -1100,10 +1109,12 @@ display: flex;
   text-decoration: underline;
   color: #fff;
 
+
 }
 
 .contenido-grid .content-libros{
   grid-column: span 3;
+
 
 }
 
@@ -1152,6 +1163,10 @@ display: flex;
   border-radius: 40px;
   border: solid 1px rgba(68, 65, 65, 0.7)
  
+}
+
+.contenido-grid .sidebar img:hover{
+  background: #EEB987;
 
 }
 
@@ -1160,10 +1175,10 @@ display: flex;
   font-size: 15px;
 }
 
-.contenido-grid .related-books {
+/* .contenido-grid .related-books {
   background: #EEB987;
   height: 280px;
-  /* width: 100%; */
+  width: 100%; 
   display: flex;
   display: inline-block;
   justify-content: center;
@@ -1181,13 +1196,13 @@ display: flex;
   cursor: pointer;
   color: #000;
   background: #CD6A4F;
-  /* background: rgba(68, 65, 65, 0.7); */
-}
+  /* background: rgba(68, 65, 65, 0.7);
+} 
 
 .contenido-grid .related-books h2 {
   text-align: center;
   font-size: 15px;
-}
+} */
 
 
 
@@ -1211,15 +1226,27 @@ display: flex;
       /*SECCION VIDEO*/
 
 /* Contenedor principal */
+.contevideos{
+  background-color:#c4c6c17b;
+  opacity: 0.9;
+  padding: 70px;
+  margin-bottom: 0 auto;
+
+}
 .container-video {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   color: #000000;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   background-color:#CD6A4F;
   opacity: 0.9;
   width: 100%;
+  border-radius: 15px;
+
 }
+
+
 
 /* Mitades */
 .half {
@@ -1243,14 +1270,17 @@ display: flex;
 .half.right-1 h2 {
   font-size: 30px;
   margin-left: 70px;
-  color: inherit;
+ color: #F2F2F2; 
+ padding: 10px;
+
 }
 
 /*Izquierda Inferior */
 .half.left-2 h2 {
   font-size: 30px;
-  margin-left: 70px;
-  color: inherit;
+  margin-left: 80px;
+  color: #F2F2F2;
+  padding: 10px;
 }
 
 
@@ -1259,16 +1289,24 @@ display: flex;
   margin-top: 35px;
   text-align: center;
   margin-bottom: 10px;
-  color: #555555;
-  background-color: #fefcfc;
-  box-shadow: 2px 2px 5px var(--colorBlueLight);
+  color: #000;
+  background: #F5E1CE;
+  box-shadow: 2px 2px 5px rgba(68, 65, 65, 0.7);
   border-radius: 10px;
-  padding: 20px;
+  /* padding:  20px; */
+
+  border: solid 1px rgba(68, 65, 65, 0.7)
 }
+
+/* .parrafos{
+  margin: 10px;
+  font-size: 40px;
+} */
 
 /* Subtítulo de indicadores */
 .subtitulo-indicadores {
-  color: #555555;
+  color: #000;
+
 }
 
 /* Indicadores numéricos y de porcentaje */
@@ -1277,9 +1315,9 @@ display: flex;
   display: inline-block;
   justify-content: center; 
   align-items: center;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
-  color:var(--colorVioletDark);
+  color: #000;
 }
 
 .indicador-numerico {
@@ -1290,6 +1328,11 @@ display: flex;
   margin-left: 30px; /* Agrega espacio a la izquierda */
 }
 
+.parrafo {
+  margin: 10px;
+}
+
+
 /* Contenedor de video */
 .video-container {
   border-radius: 5px;
@@ -1297,25 +1340,86 @@ display: flex;
   display: flex;
   width: calc(100% - 40px);
   margin: 0 auto;
-  box-shadow: 0 2px 5px var(--colorBlueLight); /* Sombra para el efecto sobresaliente */
+  box-shadow: 0 2px 5px rgba(68, 65, 65, 0.7); /* Sombra para el efecto sobresaliente */
 }
 
 .top-block h3 {
-  color:var(--colorVioletDark);
+  color: #000;
 }
 .top-block p {
-  font-size: 14px;
-  margin-top: 4px;
+  font-size: 16px;
+  margin-top: 6px;
+  text-justify: auto;
+  padding: 10px;
 }
 
 .bottom-block h3 {
-  color:var(--colorVioletDark);
+  color: #000;
 }
 .bottom-block p.subtitulo-indicadores {
   font-size: 14px;
   margin: 4px;
 }
-.show {
-  /* Toggle (activa/desactiva) la clase "show" en el desplegable */
-  display: block;
+
+@media only screen and (max-width: 1097px) {
+
+
+  .container-video {
+      flex-direction: column;
+  }
+
+  .half {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .half.left-1 {
+      order: 2;
+  }
+
+  .half.left-2 h2 {
+      margin: 0;
+  }
+
+  /* Estilos para la mitad derecha */
+  .half.right {
+      margin-top: 10px;
+      order: 1;
+  }
+
+  .half.right-1 h2 {
+      margin: 0;
+  }
+  
+  
+  .left,
+  .right {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .right {
+      order: -1;
+  }
+  
+  .video-container {
+      width: 50%;
+      margin-top: 10px;
+  }
+  .top-block h3 {
+      font-size: 16px;
+      color:var(--colorVioletDark);
+  }
+  
+  .bottom-block h3 {
+      font-size: 16px;
+      color:var(--colorVioletDark);
+  }
+   /* Estilos para los bloques superiores e inferiores */
+   .top-block,
+   .bottom-block {
+       margin: 10px;
+       padding: 15px;
+   }
 }
