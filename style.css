@@ -1094,10 +1094,10 @@ display: flex;
         border-radius: 100px;
         align-content: center;
         align-items: center;
-        padding: 50px;
-        margin: 50px auto; 
-        height: 50%;
-        width: 50%;
+        padding: 40px;
+        margin: 40px auto; 
+        height: 40%;
+        width: 60%;
         margin: 70px auto;
     
     }
@@ -1107,6 +1107,7 @@ display: flex;
   
       background-color: #F2F2F2;
       background-color:#c4c6c17b;
+
       border-radius: 100px;
       align-content: center;
       align-items: center;
@@ -1121,20 +1122,37 @@ display: flex;
     
     .micontenedor {
         /* max-width: 10000px; */
-            border-radius: 30px;
-            /*padding: 50px;
-            margin: 50px;*/
+            border-radius: 40px;
+            padding: 50px;
+            margin: 50px;
             padding: 15px;
-            margin: 15px;
+            margin: 20px;
             color: #fff;
             display: flex;
             justify-content: center;
             align-items: center; 
             background-color: #F2F2F2;
+            /* background-color: #F5E1CE; */
             
       
       }
+
+      #parrafo {
+        font-size: 18px;
+        font-style: italic;
+      }
+
+      #parrafo a{
+        color: #c43323;
+      /* text-decoration:none; */
+      font-weight: bold;
+      }
+
+      .oculto {
+        display: none; /* El párrafo estará oculto por defecto */
+      }
       
+
       /* BOTON "CONTINUAR LEYENDO" */
 
 .conteiner_btnLeerMas {
@@ -1142,7 +1160,7 @@ display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  margin: 15px;
+  margin: 25px;
 }
 
 .btn_3 {
@@ -1188,8 +1206,13 @@ display: flex;
 
        .textoSobreMi {
         color:black;
+        font-size: 4px;
+        text-align: center;
+        line-height: 35px;
       }
       
+
+
       /* SECCION RECOMENDACIONES Y NOVEDADES */
 
 .cont-recom{
