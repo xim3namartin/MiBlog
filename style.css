@@ -358,6 +358,79 @@ text-decoration:none;
   text-transform: uppercase;
 }
 
+/* BREAKPOINT: contenido TITULO */
+
+@media (max-width: 768px) {
+
+  .titulo h1 {
+    height: 45px;
+    width: 100%;
+    font-size: 180%;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .conteiner-texto {
+    text-align: center;
+    flex-direction: column;
+  height: 40%;
+  width: 100%;
+  /* opacity: 0.6;
+  transition: .8s ease; */
+  background-color: #F5E1CE;
+  color: #000;
+  border-radius: 1000px;
+  
+  }
+  
+  
+  /* .conteiner-texto:hover  {
+    opacity: 0.9;
+  } */
+  
+  
+  
+  
+  /* BOTON "SABER MAS" */
+  
+  /* .conteiner_btnmas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 45px;
+  }
+  
+  .btn_2 {
+    width: 140px;
+    height: 40px;
+    font-size: 6px;
+    background: none;
+    background-color: #F5E1CE;
+    border-radius: 16px;
+    color: #fffdfd;
+    color: #000;
+    border: solid 1px;
+  }
+  
+  .btn_2:hover {
+    border-radius: 16px;
+    border: solid #000;
+    background-color: #CD6A4F;
+    /* -webkit-text-fill-color: #0b0b0b; 
+    text-shadow: none;
+  
+    -webkit-text-fill-color: #f7f4f4;
+    text-transform: uppercase;
+  } */
+
+}
+
+
+
+
+
 
 
 
