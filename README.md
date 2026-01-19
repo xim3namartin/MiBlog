@@ -1,7 +1,7 @@
 
 ---
 
-Mi Blog – Front-End Project (HTML/CSS/JS)**
+#  ** Mi Blog – Front-End Project (HTML/CSS/JS)**
 
 ```md
 # My Blog – Front-End Project
